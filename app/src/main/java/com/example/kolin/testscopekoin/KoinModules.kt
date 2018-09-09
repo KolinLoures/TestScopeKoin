@@ -8,6 +8,6 @@ val appModule = module {
         scope("UserScope") { UserToaster(androidContext()) } bind Toaster::class
     }
     module("anon"){
-        scope("AnonScope") { UserToaster(androidContext()) } bind Toaster::class
+        scope("AnonScope") { AnonToaster(androidContext()) } bind Toaster::class
     }
 }
